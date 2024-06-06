@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <title>Dialog</title>
+</head>
+
+<body>
+  <button id="openModal">Open</button>
+  <dialog id="dialog">
+    <h1>Let's Code!</h1>
+
+    <form method="dialog">
+      <button>Ok!</button>
+    </form>
+  </dialog>
+
+  <script>
+    openModal.onclick = () => {
+      dialog.showModal();
+    };
+  </script>
+
+  <style>
+    ::backdrop {
+      background: rgb(0 0 0 / .7);
+    }
+  </style>
+</body>
+
+</html>
